@@ -38,7 +38,7 @@
       // {"t":"call","cmd":"incoming/end","name":"Bob","number":"12421312"})
       "call" : function() {
         Object.assign(event, {
-          t:event.cmd=="incoming"?"add":"remove",
+          t:event.cmd=="accept"?"add":"remove",
           id:"call", src:"Phone",
           positive:true, negative:true,
           title:event.name||"Call", body:"Incoming call\n"+event.number});
